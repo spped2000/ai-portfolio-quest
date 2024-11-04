@@ -125,9 +125,9 @@ const Index = () => {
         <Card className="p-8 bg-white/50 backdrop-blur-sm">
           <h2 className="text-3xl font-bold text-ai-800 mb-4">About Me</h2>
           <p className="text-lg text-ai-700 leading-relaxed">
-            As an AI Engineer based in Thailand, I specialize in developing and deploying machine learning solutions. 
-            With a passion for artificial intelligence and its applications, I work on creating innovative solutions 
-            that bridge the gap between cutting-edge AI research and practical business applications.
+            Hello, I'm Job and I'm passionate about technology.
+            I'm not just an AI engineer, but also an innovator who creates new products and studies emerging technologies
+            to solve various problems. I enjoy tackling challenging and novel problems.
           </p>
         </Card>
       </section>
