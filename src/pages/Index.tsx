@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Plus, Github, Linkedin, Mail, GraduationCap, Briefcase } from "lucide-react";
+import { Plus, Github, Linkedin, Mail, GraduationCap, Briefcase, BookText } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import AddAchievementDialog from "@/components/AddAchievementDialog";
@@ -97,14 +97,25 @@ const Index = () => {
           AI Engineer from Thailand
         </p>
         <div className="flex justify-center space-x-4">
-          <Button variant="outline" size="icon">
-            <Github className="h-5 w-5" />
+          <Button variant="outline" size="icon" asChild>
+            <a href="https://github.com/spped2000" target="_blank" rel="noopener noreferrer">
+              <Github className="h-5 w-5" />
+            </a>
           </Button>
-          <Button variant="outline" size="icon">
-            <Linkedin className="h-5 w-5" />
+          <Button variant="outline" size="icon" asChild>
+            <a href="https://www.linkedin.com/in/natdhanai-praneenatthavee-271899242/" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="h-5 w-5" />
+            </a>
           </Button>
-          <Button variant="outline" size="icon">
-            <Mail className="h-5 w-5" />
+          <Button variant="outline" size="icon" asChild>
+            <a href="https://medium.com/@spped2000" target="_blank" rel="noopener noreferrer">
+              <BookText className="h-5 w-5" />
+            </a>
+          </Button>
+          <Button variant="outline" size="icon" asChild>
+            <a href="mailto:jobpython2000@gmail.com">
+              <Mail className="h-5 w-5" />
+            </a>
           </Button>
         </div>
       </section>
