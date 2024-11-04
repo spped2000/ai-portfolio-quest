@@ -7,20 +7,22 @@ import { useState } from "react";
 interface AddAchievementDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  onAdd: (achievement: { title: string; description: string; date: string }) => void;
+  onAdd: (achievement: { title: string; description: string; date: string; imageUrl: string }) => void;
 }
 
 const AddAchievementDialog = ({ open, onOpenChange, onAdd }: AddAchievementDialogProps) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [date, setDate] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onAdd({ title, description, date });
+    onAdd({ title, description, date, imageUrl });
     setTitle("");
     setDescription("");
     setDate("");
+    setImageUrl("");
     onOpenChange(false);
   };
 
@@ -52,6 +54,14 @@ const AddAchievementDialog = ({ open, onOpenChange, onAdd }: AddAchievementDialo
               placeholder="Date (e.g., 2023)"
               value={date}
               onChange={(e) => setDate(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <Input
+              placeholder="Image URL"
+              value={imageUrl}
+              onChange={(e) => setImageUrl(e.target.value)}
               required
             />
           </div>

@@ -14,9 +14,38 @@ const Index = () => {
   const [achievements, setAchievements] = useState([
     {
       id: 1,
-      title: "AI Model Deployment",
-      description: "Successfully deployed large language models in production environment",
+      title: "KMITL Innovation expo",
+      description: "KMITL Innovation expo 1-3 March 2024",
+      date: "March 2024",
+      imageUrl: "/photo-1605810230434-7631ac76ec81.jpg"
+    },
+    {
+      id: 2,
+      title: "Thailand Candidate Tokyo Tech-Asia Young Scientist",
+      description: "Selected as Thailand's candidate for the Tokyo Tech-Asia Young Scientist program",
+      date: "2024",
+      imageUrl: "/photo-1460925895917-afdab827c52f.jpg"
+    },
+    {
+      id: 3,
+      title: "TensorFlow Speaker",
+      description: "Speaker at a TensorFlow event",
       date: "2023",
+      imageUrl: "/photo-1486312338219-ce68d2c6f44d.jpg"
+    },
+    {
+      id: 4,
+      title: "PartyRock App Challenge Bangkok",
+      description: "Thought Leader Award at PartyRock App Challenge Bangkok",
+      date: "2023",
+      imageUrl: "/photo-1531297484001-80022131f5a1.jpg"
+    },
+    {
+      id: 5,
+      title: "AWS Gameday Hackathon",
+      description: "4th place in the AWS Gameday Hackathon",
+      date: "2023",
+      imageUrl: "/photo-1518770660439-4636190af475.jpg"
     }
   ]);
   const [skills, setSkills] = useState([
@@ -38,7 +67,7 @@ const Index = () => {
   const [isAddingAchievement, setIsAddingAchievement] = useState(false);
   const [isAddingSkill, setIsAddingSkill] = useState(false);
 
-  const addAchievement = (achievement: { title: string; description: string; date: string }) => {
+  const addAchievement = (achievement: { title: string; description: string; date: string; imageUrl: string }) => {
     setAchievements([...achievements, { id: achievements.length + 1, ...achievement }]);
     toast({
       title: "Achievement added",
