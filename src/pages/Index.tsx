@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Plus, Github, Linkedin, Mail, GraduationCap, Briefcase, BookText } from "lucide-react";
-import { useToast } from "@/components/ui/use-toast";
+import { Github, Linkedin, Mail, GraduationCap, Briefcase, BookText } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import AddAchievementDialog from "@/components/AddAchievementDialog";
 import AddSkillDialog from "@/components/AddSkillDialog";
 import SkillCard from "@/components/SkillCard";
 import AchievementCard from "@/components/AchievementCard";
+import { useToast } from "@/components/ui/use-toast";
 
 const Index = () => {
   const { toast } = useToast();
@@ -218,13 +218,7 @@ const Index = () => {
 
       {/* Skills Section */}
       <section className="container mx-auto px-4 py-16">
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-3xl font-bold text-ai-800">Skills</h2>
-          <Button onClick={() => setIsAddingSkill(true)} variant="outline">
-            <Plus className="h-4 w-4 mr-2" />
-            Add Skill
-          </Button>
-        </div>
+        <h2 className="text-3xl font-bold text-ai-800 mb-8">Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill) => (
             <SkillCard key={skill.id} {...skill} />
@@ -234,13 +228,7 @@ const Index = () => {
 
       {/* Achievements Section */}
       <section className="container mx-auto px-4 py-16">
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-3xl font-bold text-ai-800">Achievements</h2>
-          <Button onClick={() => setIsAddingAchievement(true)} variant="outline">
-            <Plus className="h-4 w-4 mr-2" />
-            Add Achievement
-          </Button>
-        </div>
+        <h2 className="text-3xl font-bold text-ai-800 mb-8">Achievements</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {achievements.map((achievement) => (
             <AchievementCard key={achievement.id} {...achievement} />
