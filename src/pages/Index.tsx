@@ -20,9 +20,20 @@ const Index = () => {
     }
   ]);
   const [skills, setSkills] = useState([
-    { id: 1, name: "Machine Learning", level: 90 },
-    { id: 2, name: "Python", level: 95 },
-    { id: 3, name: "Deep Learning", level: 85 },
+    { id: 1, name: "Python" },
+    { id: 2, name: "Flask" },
+    { id: 3, name: "Ray" },
+    { id: 4, name: "Tensorflow" },
+    { id: 5, name: "Pytorch" },
+    { id: 6, name: "MLops" },
+    { id: 7, name: "AI application deployment" },
+    { id: 8, name: "Tuning Optimize Edge device" },
+    { id: 9, name: "Cloud (AWS) e.g. sagemaker, bedrock, EC2, S3" },
+    { id: 10, name: "Deep Learning" },
+    { id: 11, name: "Machine Learning" },
+    { id: 12, name: "LLMs, VLMs" },
+    { id: 13, name: "Multi-Modal RAG" },
+    { id: 14, name: "Research" }
   ]);
   const [isAddingAchievement, setIsAddingAchievement] = useState(false);
   const [isAddingSkill, setIsAddingSkill] = useState(false);
