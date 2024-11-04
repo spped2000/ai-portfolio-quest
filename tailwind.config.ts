@@ -52,6 +52,17 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        ai: {
+          100: "#E6F1FF",
+          200: "#B3D1FF",
+          300: "#80B1FF",
+          400: "#4D91FF",
+          500: "#1A71FF",
+          600: "#0052CC",
+          700: "#003D99",
+          800: "#002966",
+          900: "#001433",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,10 +78,15 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        fadeIn: "fadeIn 0.5s ease-out forwards",
       },
     },
   },
