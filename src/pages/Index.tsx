@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Plus, Award, Brain, Briefcase, Github, Linkedin, Mail } from "lucide-react";
+import { Plus, Github, Linkedin, Mail } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import AddAchievementDialog from "@/components/AddAchievementDialog";
 import AddSkillDialog from "@/components/AddSkillDialog";
 import SkillCard from "@/components/SkillCard";
@@ -46,6 +47,10 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-background to-ai-100">
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center animate-fadeIn">
+        <Avatar className="w-32 h-32 mx-auto mb-8 border-4 border-white shadow-lg">
+          <AvatarImage src="/profile.jpg" alt="Natdhanai Praneenatthavee" />
+          <AvatarFallback>NP</AvatarFallback>
+        </Avatar>
         <h1 className="text-4xl md:text-6xl font-bold text-ai-800 mb-4">
           Natdhanai Praneenatthavee
         </h1>
