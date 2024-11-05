@@ -11,13 +11,14 @@ import { useToast } from "@/components/ui/use-toast";
 
 const Index = () => {
   const { toast } = useToast();
-  const [achievements, setAchievements] = useState([
+
+const [achievements, setAchievements] = useState([
     {
       id: 1,
       title: "KMITL Innovation expo",
       description: "KMITL Innovation expo 1-3 March 2024",
       date: "March 2024",
-      imageUrl: "/photo-1605810230434-7631ac76ec81.jpg"
+      imageUrl: "/kmitl-innovation-expo.jpg"  // Updated image path
     },
     {
       id: 2,
@@ -47,7 +48,8 @@ const Index = () => {
       date: "2023",
       imageUrl: "/photo-1518770660439-4636190af475.jpg"
     }
-  ]);
+]);
+
   const [skills, setSkills] = useState([
     { id: 1, name: "Python" },
     { id: 2, name: "Flask" },
@@ -251,3 +253,4 @@ const Index = () => {
 };
 
 export default Index;
+
