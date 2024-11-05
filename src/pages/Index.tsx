@@ -27,28 +27,28 @@ const Index = () => {
       id: 2,
       title: "Thailand Candidate Tokyo Tech-Asia Young Scientist",
       description: "Selected as Thailand's candidate for the Tokyo Tech-Asia Young Scientist program",
-      date: "2024",
+      date: "September 2023",
       imageUrl: "/achievement-2.jpg"
     },
     {
       id: 3,
       title: "TensorFlow Speaker",
       description: "Speaker at a TensorFlow event",
-      date: "2023",
+      date: "May 2024",
       imageUrl: "/achievement-3.jpg"
     },
     {
       id: 4,
       title: "PartyRock App Challenge Bangkok",
       description: "Thought Leader Award at PartyRock App Challenge Bangkok",
-      date: "2023",
+      date: "August 2024",
       imageUrl: "/achievement-4.jpg"
     },
     {
       id: 5,
       title: "AWS Gameday Hackathon",
       description: "4th place in the AWS Gameday Hackathon",
-      date: "2023",
+      date: "June 2024",
       imageUrl: "/achievement-5.jpg"
     },
     {
