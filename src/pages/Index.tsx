@@ -8,17 +8,20 @@ import AddSkillDialog from "@/components/AddSkillDialog";
 import SkillCard from "@/components/SkillCard";
 import AchievementCard from "@/components/AchievementCard";
 import { useToast } from "@/components/ui/use-toast";
+import { AboutSection } from "@/components/sections/AboutSection";
+import { EducationSection } from "@/components/sections/EducationSection";
+import { ExperienceSection } from "@/components/sections/ExperienceSection";
 
 const Index = () => {
   const { toast } = useToast();
 
-const [achievements, setAchievements] = useState([
+  const [achievements, setAchievements] = useState([
     {
       id: 1,
       title: "KMITL Innovation expo",
       description: "KMITL Innovation expo 1-3 March 2024",
       date: "March 2024",
-      imageUrl: "/kmitl-innovation-expo.jpg"  // Updated image path
+      imageUrl: "/kmitl-innovation-expo.jpg"
     },
     {
       id: 2,
@@ -48,7 +51,7 @@ const [achievements, setAchievements] = useState([
       date: "2023",
       imageUrl: "/photo-1518770660439-4636190af475.jpg"
     }
-]);
+  ]);
 
   const [skills, setSkills] = useState([
     { id: 1, name: "Python" },
@@ -122,101 +125,9 @@ const [achievements, setAchievements] = useState([
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="container mx-auto px-4 py-16">
-        <Card className="p-8 bg-white/50 backdrop-blur-sm">
-          <h2 className="text-3xl font-bold text-ai-800 mb-4">About Me</h2>
-          <p className="text-lg text-ai-700 leading-relaxed">
-            Hello, I'm Job and I'm passionate about technology.
-            I'm not just an AI engineer, but also an innovator who creates new products and studies emerging technologies
-            to solve various problems. I enjoy tackling challenging and novel problems.
-          </p>
-        </Card>
-      </section>
-
-      {/* Education Section */}
-      <section className="container mx-auto px-4 py-16">
-        <Card className="p-8 bg-white/50 backdrop-blur-sm">
-          <div className="flex items-center mb-6">
-            <GraduationCap className="h-8 w-8 text-ai-600 mr-3" />
-            <h2 className="text-3xl font-bold text-ai-800">Education</h2>
-          </div>
-          
-          <div className="space-y-8">
-            {/* Master's Degree */}
-            <div className="border-l-4 border-ai-600 pl-4">
-              <h3 className="text-xl font-semibold text-ai-800">King Mongkut's Institute of Technology Ladkrabang</h3>
-              <p className="text-ai-700 font-medium">Master's degree, Artificial Intelligence</p>
-              <p className="text-ai-600">Faculty of Information Technology</p>
-              <p className="text-ai-500">Jul 2022 - 2024</p>
-            </div>
-
-            {/* Bachelor's Degree */}
-            <div className="border-l-4 border-ai-600 pl-4">
-              <h3 className="text-xl font-semibold text-ai-800">Mahidol University</h3>
-              <p className="text-ai-700 font-medium">Bachelor's degree, Physics</p>
-              <p className="text-ai-600">AI submajor</p>
-              <div className="mt-2">
-                <p className="text-ai-600 font-medium">Senior Project:</p>
-                <p className="text-ai-600">Deep Learning Inversion of One-dimensional Acoustic Data</p>
-                <p className="text-sm text-ai-500 italic">(Completed before ChatGPT release)</p>
-              </div>
-              <p className="text-ai-500 mt-2">2018 - 2022</p>
-            </div>
-          </div>
-        </Card>
-      </section>
-
-      {/* Experience Section */}
-      <section className="container mx-auto px-4 py-16">
-        <Card className="p-8 bg-white/50 backdrop-blur-sm">
-          <div className="flex items-center mb-6">
-            <Briefcase className="h-8 w-8 text-ai-600 mr-3" />
-            <h2 className="text-3xl font-bold text-ai-800">Experience</h2>
-          </div>
-          
-          <div className="space-y-8">
-            <div className="border-l-4 border-ai-600 pl-4">
-              <h3 className="text-xl font-semibold text-ai-800">AI Engineer</h3>
-              <p className="text-ai-700 font-medium">AXONS · Full-time</p>
-              <p className="text-ai-500">Aug 2023 - Present · 1 yr 4 mos</p>
-            </div>
-
-            <div className="border-l-4 border-ai-600 pl-4">
-              <h3 className="text-xl font-semibold text-ai-800">Researcher</h3>
-              <p className="text-ai-700 font-medium">Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang</p>
-              <p className="text-ai-500">May 2023 - Present · 1 yr 7 mos · Hybrid</p>
-              <ul className="list-disc ml-4 mt-2 text-ai-700">
-                <li>Published 2 papers (one journal, one proceeding)</li>
-                <li>Revolutionizing egg quality control: advanced prompt-based models for automated detection of broken eggs without the need for training</li>
-                <li>Zero-/Few-Shot Anomaly Classification for Transistor Using Multimodal CLIP Retrieval-Augmented</li>
-              </ul>
-            </div>
-
-            <div className="border-l-4 border-ai-600 pl-4">
-              <h3 className="text-xl font-semibold text-ai-800">Co-Founder and Engineer</h3>
-              <p className="text-ai-700 font-medium">Phuetnoi · Self-employed</p>
-              <p className="text-ai-500">Apr 2024 - Jul 2024 · 4 mos</p>
-              <ul className="list-disc ml-4 mt-2 text-ai-700">
-                <li>12 Finalist Agritech Innovation</li>
-                <li>Collaborated with junior colleagues from the Faculty of Engineering to create a smart agriculture platform integrated with AI, including smart drones, a smart Thai agriculture chatbot, and anomaly detection using self-supervised learning</li>
-              </ul>
-            </div>
-
-            <div className="border-l-4 border-ai-600 pl-4">
-              <h3 className="text-xl font-semibold text-ai-800">AI/ML tutor</h3>
-              <p className="text-ai-700 font-medium">ตื่นมาโค้ด python · Owner</p>
-              <p className="text-ai-500">Jan 2023 - Jul 2024 · 1 yr 7 mos</p>
-            </div>
-
-            <div className="border-l-4 border-ai-600 pl-4">
-              <h3 className="text-xl font-semibold text-ai-800">AI Software Engineer</h3>
-              <p className="text-ai-700 font-medium">Baksters · Full-time</p>
-              <p className="text-ai-500">Oct 2022 - Jul 2023 · 10 mos</p>
-            </div>
-          </div>
-        </Card>
-      </section>
+      <AboutSection />
+      <EducationSection />
+      <ExperienceSection />
 
       {/* Skills Section */}
       <section className="container mx-auto px-4 py-16">
@@ -253,4 +164,3 @@ const [achievements, setAchievements] = useState([
 };
 
 export default Index;
-
