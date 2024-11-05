@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Github, Linkedin, Mail, GraduationCap, Briefcase, BookText } from "lucide-react";
+import { Github, Linkedin, Mail, BookText } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import AddAchievementDialog from "@/components/AddAchievementDialog";
 import AddSkillDialog from "@/components/AddSkillDialog";
@@ -28,28 +28,28 @@ const Index = () => {
       title: "Thailand Candidate Tokyo Tech-Asia Young Scientist",
       description: "Selected as Thailand's candidate for the Tokyo Tech-Asia Young Scientist program",
       date: "2024",
-      imageUrl: "/photo-1460925895917-afdab827c52f.jpg"
+      imageUrl: "/achievement-2.jpg"
     },
     {
       id: 3,
       title: "TensorFlow Speaker",
       description: "Speaker at a TensorFlow event",
       date: "2023",
-      imageUrl: "/photo-1486312338219-ce68d2c6f44d.jpg"
+      imageUrl: "/achievement-3.jpg"
     },
     {
       id: 4,
       title: "PartyRock App Challenge Bangkok",
       description: "Thought Leader Award at PartyRock App Challenge Bangkok",
       date: "2023",
-      imageUrl: "/photo-1531297484001-80022131f5a1.jpg"
+      imageUrl: "/achievement-4.jpg"
     },
     {
       id: 5,
       title: "AWS Gameday Hackathon",
       description: "4th place in the AWS Gameday Hackathon",
       date: "2023",
-      imageUrl: "/photo-1518770660439-4636190af475.jpg"
+      imageUrl: "/achievement-5.jpg"
     }
   ]);
 
@@ -164,3 +164,4 @@ const Index = () => {
 };
 
 export default Index;
+
