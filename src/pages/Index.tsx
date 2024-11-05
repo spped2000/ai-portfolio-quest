@@ -21,7 +21,7 @@ const Index = () => {
       title: "KMITL Innovation expo",
       description: "KMITL Innovation expo 1-3 March 2024",
       date: "March 2024",
-      imageUrl: "/kmitl-innovation-expo.jpg"
+      imageUrl: "/achievement-1.jpg"
     },
     {
       id: 2,
