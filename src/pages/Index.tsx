@@ -50,6 +50,13 @@ const Index = () => {
       description: "4th place in the AWS Gameday Hackathon",
       date: "2023",
       imageUrl: "/achievement-5.jpg"
+    },
+    {
+      id: 6,
+      title: "VLMs and Multi-modal RAG Workshop",
+      description: "Invited by a tech page with over 10,000 followers to teach about VLMs and Multi-modal RAG",
+      date: "September 2024",
+      imageUrl: "/achievement-RAG.jpg"
     }
   ]);
 
