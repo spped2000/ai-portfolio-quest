@@ -74,7 +74,9 @@ const Index = () => {
     { id: 11, name: "Machine Learning" },
     { id: 12, name: "LLMs, VLMs" },
     { id: 13, name: "Multi-Modal RAG" },
-    { id: 14, name: "Research" }
+    { id: 14, name: "Research" },
+    { id: 15, name: "Docker" },
+    { id: 16, name: "Linux" }
   ]);
   const [isAddingAchievement, setIsAddingAchievement] = useState(false);
   const [isAddingSkill, setIsAddingSkill] = useState(false);
